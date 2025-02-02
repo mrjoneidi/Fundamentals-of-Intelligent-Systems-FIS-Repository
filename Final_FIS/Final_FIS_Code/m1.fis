@@ -1,0 +1,28 @@
+[System]
+Name='m1'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Error'
+Range=[-1 1]
+NumMFs=3
+MF1='mf1':'gaussmf',[0.3539 -1]
+MF2='mf2':'gaussmf',[0.3539 -1.388e-17]
+MF3='mf3':'gaussmf',[0.3538 1]
+
+[Output1]
+Name='output1'
+Range=[-1 1]
+NumMFs=1
+MF1='mf1':'gaussmf',[0.3539 -0.995728329809725]
+
+[Rules]
